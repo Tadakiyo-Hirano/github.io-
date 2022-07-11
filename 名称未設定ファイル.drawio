@@ -1,1 +1,138 @@
-<mxfile host="app.diagrams.net" modified="2022-07-11T05:32:33.815Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" version="20.0.4" etag="9vAAnvjQN_gv9JqIziC6" type="github"><diagram id="F3nY4fBgkKPF_3630X6k">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-07-11T05:34:49.310Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="GCmrWnclBASyOrLIR6VQ" version="20.0.4" type="github">
+  <diagram id="F3nY4fBgkKPF_3630X6k" name="ページ1">
+    <mxGraphModel dx="168" dy="2629" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8mASU4n4FyGlostJlNxp-1" value="field_worker(現場作業員テーブル)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="960" y="-1735" width="420" height="1256" as="geometry">
+            <mxRectangle x="500" y="-381" width="100" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-2" value="field_workerable_type ※ポリモーフィック関連" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=default;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="26" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-3" value="field_workerable_id" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=default;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="56" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-4" value="admission_worker_name json not_null 入場する作業員名(複数)作業員名" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="86" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-5" value="admission_start_date json not_null 入場年月日(始期)" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="116" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-6" value="admission_end_date json not_null 入場年月日(終期)" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="146" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-7" value="new_admission_education json not_null 新規入場時教育・年月日" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="176" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-8" value="new_admission_education json not_null 新規入場時教育・年月日" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="206" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-9" value="car_usage_period_start_date date 車両(使用期間･始期)" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="236" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-10" value="car_usage_period_end_date date 車両(使用期間･終期)" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="266" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-11" value="operation_route string 車両(運行経路)" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="296" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-12" value="waypoint_first string 車両(運行経路の経由地1)" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="326" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-13" value="waypoint_second string 車両(運行経路の経由地2)" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="356" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-14" value="destination string 車両(目的地)" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="386" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-15" value="name string not_null 名前" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=default;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="416" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-16" value="name_kana string not_null 名前カナ" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=default;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="446" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-17" value="carrier_up_id sting  技能者ID（キャリアアップ）" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=default;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="476" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-18" value="job_type integer 職種　（設計見直し中）" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=#b85450;fillColor=#f8cecc;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="506" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-19" value="symbol int 記号(enumで管理)" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=default;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="536" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-20" value="hiring_on date not_null 雇入年月日" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=default;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="566" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-21" value="experience_term_before_hiring int not_null 雇入前経験年数" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=default;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="596" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-22" value="birth_day_on date not_null 生年月日" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=default;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="626" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-23" value="age integer not_null 年齢" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=default;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="656" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-24" value="my_address string not_null 住所" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=default;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="686" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-25" value="family_address not_null 緊急連絡先住所" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=default;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="716" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-26" value="my_phone_number string not_null 電話番号" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=default;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="746" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-27" value="family_phone_number string not_null 家族電話番号" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=default;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="776" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-28" value="med_exam_on date 健康診断日" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=default;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="806" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-29" value="max_blood_pressure int 最高血圧" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=default;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="836" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-30" value="min_blood_pressure int 最低血圧" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=default;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="866" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-31" value="abo_blood_type int not_null 血液型(emunで管理)" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=default;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="896" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-32" value="special_med_exam_on date 特別健康診断日" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=default;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="926" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-33" value="special_med_exam_name string 特別健康診断種類" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=default;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="956" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-34" value="health_insurance_type int 健康保険(enumで管理)" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=default;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="986" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-35" value="pension_insurance_type int 年金保険(enumで管理)" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=default;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="1016" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-36" value="employment_insurance_type int 雇用保険(enumで管理)" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=default;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="1046" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-37" value="severance_pay_mutual_aid_type int not_null 建設業退職金共済制度(enumで管理)" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=default;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="1076" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-38" value="中小企業退職金共済制度 ※確認" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=#b85450;fillColor=#f8cecc;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="1106" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-39" value="special_education json 特別教育" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=default;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="1136" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-40" value="skill_training json 技能講習" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=default;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="1166" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-41" value="license json 免許" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=default;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="1196" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8mASU4n4FyGlostJlNxp-42" value="severance_pay_mutual_aid_type int not_null 建設業退職金共済制度(enumで管理)" style="text;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;strokeColor=default;" vertex="1" parent="8mASU4n4FyGlostJlNxp-1">
+          <mxGeometry y="1226" width="420" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
